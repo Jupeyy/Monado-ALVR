@@ -232,7 +232,7 @@ create_target_lel(const comp_target_factory *factory, struct comp_compositor *co
 extern "C" comp_target_factory
 alvr_create_target_factory()
 {
-	const char *device_extensions[] = {
+	static const char *device_extensions[] = {
 	    VK_KHR_EXTERNAL_MEMORY_FD_EXTENSION_NAME,      VK_KHR_EXTERNAL_SEMAPHORE_FD_EXTENSION_NAME,
 	    VK_EXT_EXTERNAL_MEMORY_DMA_BUF_EXTENSION_NAME, VK_EXT_IMAGE_DRM_FORMAT_MODIFIER_EXTENSION_NAME,
 	    VK_KHR_EXTERNAL_SEMAPHORE_FD_EXTENSION_NAME,   VK_EXT_EXTERNAL_MEMORY_HOST_EXTENSION_NAME,
